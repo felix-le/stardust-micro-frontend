@@ -1,14 +1,15 @@
 {
-  "name": "stardust-frontend-hub",
+  "name": "stardust-frontend-news",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -- -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@module-federation/nextjs-mf": "^6.0.4",
     "@next/font": "13.1.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
@@ -18,6 +19,7 @@
     "next": "13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "webpack": "^5.75.0"
   }
 }
