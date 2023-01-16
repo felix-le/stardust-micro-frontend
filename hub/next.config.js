@@ -6,6 +6,7 @@ const nextConfig = {
   webpack: (config, options) => {
     const { isServer } = options;
     config.experiments = { topLevelAwait: true };
+
     config.plugins.push(
       new NextFederationPlugin({
         name: 'hub',
@@ -29,6 +30,12 @@ const nextConfig = {
         },
         extraOptions: {
           exposePages: true,
+        },
+        shared: {
+          tailwindcss: {
+            eager: true,
+            singleton: true,
+          },
         },
       })
     );
