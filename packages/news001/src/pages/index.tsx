@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import dynamic from 'next/dynamic';
 
-const Footer = dynamic(() => import('hub/Footer'));
+const Footer = dynamic(() => import('hub/footer'));
 
 export default function Home() {
   return (

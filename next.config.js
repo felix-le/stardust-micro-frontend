@@ -14,6 +14,11 @@ const nextConfig = {
           }/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
+        // exposes whole files in src/components folder with its name as key and path as value
+        // exposes: {
+        //   './components/(.*)': './src/components/$1',
+        // },
+
         exposes: {
           './footer': './src/components/footer.tsx',
         },
