@@ -1,4 +1,5 @@
 const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
+const glob = require('glob');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -14,16 +15,24 @@ const nextConfig = {
           }/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
-        // exposes whole files in src/components folder with its name as key and path as value
-        // exposes: {
-        //   './components/(.*)': './src/components/$1',
-        // },
-
         exposes: {
-          './footer': './src/components/footer.tsx',
+          ...glob.sync('./src/components/**/*.tsx').reduce((acc, file) => {
+            const key = file.replace('./src/', './').replace('.tsx', '');
+            acc[key] = file;
+            return acc;
+          }, {}),
+          ...glob.sync('./src/pages/**/*.tsx').reduce((acc, file) => {
+            const key = file.replace('./src/', './').replace('.tsx', '');
+            acc[key] = file;
+            return acc;
+          }, {}),
+        },
+        extraOptions: {
+          exposePages: true,
         },
       })
     );
+
     return config;
   },
 };

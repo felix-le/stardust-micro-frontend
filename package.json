@@ -21,5 +21,9 @@
     "react-dom": "18.2.0",
     "typescript": "4.9.4",
     "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "eslint-import-resolver-node": "^0.3.7",
+    "eslint-plugin-import": "^2.27.4"
   }
 }
