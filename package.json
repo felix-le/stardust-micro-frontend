@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/hub001/website",
+    "packages/news001/website"
+  ],
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  },
+  "scripts": {
+    "initpackages": "cd packages/hub001/website && yarn && cd ../../../packages/news001/website && yarn",
+    "hub": "cd packages/hub001/website && yarn dev",
+    "news": "cd packages/news001/website && yarn dev",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "test": "lerna run test"
+  }
+}
