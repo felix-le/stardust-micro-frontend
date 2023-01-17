@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '@/styles/Home.module.css';
 import dynamic from 'next/dynamic';
 
 const Footer = dynamic(() => import('hub/components/footer'));
@@ -13,7 +12,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={styles.main}>
+      <main className='bg-gray-400'>
         <h1 className='text-red-500'>this is news001 project</h1>
       </main>
       <Footer />
