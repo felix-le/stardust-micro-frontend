@@ -1,5 +1,16 @@
+import { createUseStyles } from 'react-jss';
+
+const useStyles = createUseStyles({
+  wrapper: {
+    padding: 40,
+    textAlign: 'left',
+  },
+});
+
 function Footer() {
-  return <h1 className='text-red-500'>Hub Footer</h1>;
+  const classes = useStyles();
+
+  return <h1 className={classes.wrapper}>Hub Footer</h1>;
 }
 
 export default Footer;
