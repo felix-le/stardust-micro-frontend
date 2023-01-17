@@ -12,12 +12,13 @@ To work on this project, please replicate the following folder structure:
     |- /new001
 ```
 
-## Flow
+## feature of hub001
 
 1. hub to show login/logout
 2. header/footer ...
 3. general information.
 4. hub control style and theme
+5. **all files in src/components and src/pages will be share cross the app and other monorepo**
 
 ## Style
 
