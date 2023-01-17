@@ -1,11 +1,11 @@
 {
-  "name": "news001",
+  "name": "hub001",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Viet Anh Le <mc.vietanh@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/news001.js",
+  "main": "lib/hub001.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,6 +14,6 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/news001.test.js"
+    "test": "node ./__tests__/hub001.test.js"
   }
 }

@@ -17,13 +17,6 @@ const nextConfig = {
           }/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
-
-        // exposes whole files in src/components folder with regex
-        // exposes: {
-        //               './components/(.*)': './src/components/$1',
-        //   './pages/(.*)': './src/pages/$1',
-        // },
-
         extraOptions: {
           exposePages: true,
         },
