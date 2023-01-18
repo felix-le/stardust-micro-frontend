@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import   { ReactNode } from "react";
+import { ReactNode } from 'react';
 
-import Footer from'./footer'
+import Footer from './footer';
 
 interface Props {
-  children?: ReactNode
+  children?: ReactNode;
   // any props that come into the component
 }
 
-const Layout = ({ children }:Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Head>
