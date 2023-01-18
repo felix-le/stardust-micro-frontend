@@ -2,6 +2,12 @@
   "name": "stardust-frontend-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/felix-le/stardust-micro-frontend",
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev -- -p 3001",
     "build": "next build",
