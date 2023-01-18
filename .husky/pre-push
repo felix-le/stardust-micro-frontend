@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-cd packages/hub001/website yarn build
+# cd packages/hub001/website yarn build
 # cd ../../../packages/news001/website && yarn build
