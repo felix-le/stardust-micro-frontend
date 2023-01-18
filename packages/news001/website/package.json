@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://github.com/felix-le/stardust-micro-frontend",
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=18.0.0",
     "yarn": ">=1.22.0",
     "npm": "please-use-yarn"
   },
