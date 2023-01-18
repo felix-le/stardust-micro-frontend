@@ -13,4 +13,11 @@
 
 - lerna add husky
 - npx husky install
--
+- --- issue
+
+- can't build because in the news001 you can't find the components in the hub001. The you have to change the code below when import it.
+
+```js
+// const Footer = dynamic(() => import('hub/components/footer')); <-- wrong
+const Footer = dynamic(() => import('hub/components/' + 'footer')); // <-- right
+```
