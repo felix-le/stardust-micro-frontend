@@ -13,6 +13,9 @@
 
 - lerna add husky
 - npx husky install
+- default format requirements for commit message
+- update vscode setting to format on save
+-
 - --- issue
 
 - can't build because in the news001 you can't find the components in the hub001. The you have to change the code below when import it.
