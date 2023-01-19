@@ -12,6 +12,8 @@
     "packages/news001/website"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "lerna": "^6.4.1"
   },
   "scripts": {
