@@ -1,5 +1,3 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 yarn prettier
-cd packages/hub001/website/src && yarn lint
-cd ../../../../packages/news001/website/src && yarn lint 

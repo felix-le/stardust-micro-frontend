@@ -25,7 +25,7 @@
     "clean": "lerna run clean",
     "test": "lerna run test",
     "prepare": "husky install",
-    "prettier": "prettier --write packages/**/website/src"
+    "prettier": "prettier --write --cache packages/**/website/src"
   },
   "dependencies": {
     "lint": "^0.8.19",
