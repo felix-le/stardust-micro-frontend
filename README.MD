@@ -34,3 +34,17 @@ To work on this project, please replicate the following folder structure:
 - for run project:
   `yarn hub`
   `yarn news`
+
+## To run the hub:
+
+1- Run the frontend: `yarn hub`
+
+## To install a package in a specific module (Frontend):
+
+1- `lerna add [packageName] [pathToModule]`
+Example: `lerna add axios packages/hub001/website`
+
+To install a package in all frontend modules:
+
+2- `lerna add [packageName]`
+Example: `lerna add axios`
