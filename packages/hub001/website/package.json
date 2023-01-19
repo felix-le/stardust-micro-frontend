@@ -13,7 +13,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -29,7 +28,6 @@
     "next": "13.1.2",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.0.2",
-    "prettier": "^2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-jss": "^10.9.2",
