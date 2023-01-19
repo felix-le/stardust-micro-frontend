@@ -16,7 +16,7 @@ To work on this project, please replicate the following folder structure:
 
 1. This project uses lerna to manage monorepo
 2. This project uses nextjs to build micro front end
-3. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint
+3. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint (cached)
 
 ## feature of hub001
 
