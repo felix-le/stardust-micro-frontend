@@ -12,7 +12,7 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --cache",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
