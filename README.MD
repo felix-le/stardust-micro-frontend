@@ -19,7 +19,7 @@ To work on this project, please replicate the following folder structure:
 3. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint (cached)
 4. Please refer to `commitlint.config.js` to make the massge when `git commit`
 
-## feature of hub001
+## Feature of hub001
 
 1. hub to show login/logout
 2. header/footer ...
@@ -31,6 +31,21 @@ To work on this project, please replicate the following folder structure:
 
 1. hub001 to control style and theme
 2. Can use tailwindcss or css-in-js
+
+## Components
+
+1. Create template base for components for hub001
+
+```MD
+<!-- File Tree -->
+components
+├─ templates
+│  └─ base
+│     ├─ BaseTemplate.interface.ts
+│     ├─ BaseTemplate.mocks.ts
+│     ├─ BaseTemplate.stories.tsx
+│     └─ BaseTemplate.tsx
+```
 
 ### Installation
 

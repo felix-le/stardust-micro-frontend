@@ -1,9 +1,11 @@
 const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
 const glob = require('glob');
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-
+  images: {
+    domains: ['i.pravatar.cc'],
+  },
   webpack: (config, options) => {
     const { isServer } = options;
 
@@ -43,5 +45,3 @@ const nextConfig = {
     return config;
   },
 };
-
-module.exports = nextConfig;

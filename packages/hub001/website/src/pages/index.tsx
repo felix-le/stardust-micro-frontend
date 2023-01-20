@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-
+import CatCard from '@/components/templates/example/cards/cat/CatCard';
 export default function Home() {
   return (
     <Layout>
@@ -14,6 +14,13 @@ export default function Home() {
         <h1 className="text-3xl font-bold underline text-red-500">
           Hello world!
         </h1>
+        <CatCard
+          tag="Felines"
+          title={`What's new in Cats`}
+          body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!"
+          author="Alex"
+          time="2h ago"
+        />
       </main>
     </Layout>
   );
