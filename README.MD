@@ -34,20 +34,36 @@ To work on this project, please replicate the following folder structure:
 
 ## Components
 
-1. Create template base for components for hub001
+1. Template base && example for components for hub001
 
 ```MD
 <!-- File Tree -->
 components
 ├─ templates
-│  └─ base
-│     ├─ BaseTemplate.interface.ts
-│     ├─ BaseTemplate.mocks.ts
-│     ├─ BaseTemplate.stories.tsx
-│     └─ BaseTemplate.tsx
+│  ├─ base
+│  │  ├─ BaseTemplate.interface.ts
+│  │  ├─ BaseTemplate.mocks.ts
+│  │  ├─ BaseTemplate.stories.tsx
+│  │  ├─ BaseTemplate.styles.ts
+│  │  └─ BaseTemplate.tsx
+│  └─ example
+│     └─ cards
+│        └─ cat
+│           ├─ CatCard.interface.ts
+│           ├─ CatCard.mocks.ts
+│           ├─ CatCard.stories.tsx
+│           ├─ CatCard.styles.ts
+│           └─ CatCard.tsx
 ```
 
-### Installation
+2. Example for storybook of CatCard component
+
+<!-- add image in ReadmeImages -->
+<p align="center"> 
+<img src="./ReadMeImages/catcard.png"   width="60%" height="30%">
+</p>
+
+## Installation
 
 - root folder:
 
