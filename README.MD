@@ -8,6 +8,12 @@
 
 To work on this project, please replicate the following folder structure:
 
+<--
+https://stockx.com/
+help
+sell
+news
+-->
 ```
  |- /packages
     |- /hub001
