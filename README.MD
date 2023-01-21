@@ -1,5 +1,7 @@
 # Micro front end with NextJS version 13
 
+- Lerna
+- NextJS
 - tailwindcss
 
 # Folder structure
@@ -12,12 +14,17 @@ To work on this project, please replicate the following folder structure:
     |- /new001
 ```
 
-## Feature of project
+## Features of this project
 
-1. This project uses lerna to manage monorepo
-2. This project uses nextjs to build micro front end
-3. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint (cached)
-4. Please refer to `commitlint.config.js` to make the massge when `git commit`
+1. This project uses lerna to manage NextJS monorepos
+2. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint (cached)
+3. Please refer to `commitlint.config.js` to make the massge when `git commit`
+
+---- on going ----
+1. chat bot - with ChatGPT (as a customer service)
+2. Calendar - with book appointments with clients or staffs
+3. 
+
 
 ## Feature of hub001
 
