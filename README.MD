@@ -23,7 +23,7 @@ To work on this project, please replicate the following folder structure:
 ---- on going ----
 1. chat bot - with ChatGPT (as a customer service)
 2. Calendar - with book appointments with clients or staffs
-3. 
+3. visualize data (data tables, locations, ....)
 
 
 ## Feature of hub001
