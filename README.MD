@@ -90,7 +90,7 @@ components
 
 - root folder:
 
-`yarn && yarn initpakages`
+`yarn && yarn initpackages`
 
 - for run project:
   `yarn hub`
