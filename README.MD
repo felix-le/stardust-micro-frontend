@@ -4,6 +4,15 @@
 - NextJS
 - tailwindcss
 
+# Todo:
+
+Jan 26, 2023
+
+- [ ] authentication and authorization (with next-auth)
+- [ ] Create share state with Redux toolkits for components in hub001
+- [ ] Test share state between monorepo
+- [ ]
+
 # Folder structure
 
 To work on this project, please replicate the following folder structure:
@@ -14,6 +23,7 @@ help
 sell
 news
 -->
+
 ```
  |- /packages
     |- /hub001
@@ -27,10 +37,10 @@ news
 3. Please refer to `commitlint.config.js` to make the massge when `git commit`
 
 ---- on going ----
+
 1. chat bot - with ChatGPT (as a customer service)
 2. Calendar - with book appointments with clients or staffs
 3. visualize data (data tables, locations, ....)
-
 
 ## Feature of hub001
 
