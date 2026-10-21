@@ -1,112 +1,61 @@
-# Micro front end with NextJS version 13
+# Stardust — Micro-Frontend Monorepo (Next.js + Module Federation)
 
-- Lerna
-- NextJS
-- tailwindcss
+A micro-frontend architecture built with **Next.js 13** and **Module Federation**, managed as a **Lerna + Yarn workspaces** monorepo. Independent apps are developed and deployed separately while sharing components, theme, and layout from a central hub.
 
-# Todo:
+## Architecture
 
-Jan 26, 2023
+| Package | Role |
+|---|---|
+| `packages/hub001/website` | **Host / hub** — owns the shared UI: header, footer, theme, and the component library (`src/components`, `src/pages`) consumed by the other apps |
+| `packages/news001/website` | **Remote app** — a news site (modeled on a StockX-style layout) that consumes the hub's shared components at runtime via `@module-federation/nextjs-mf` |
 
-- [ ] authentication and authorization (with next-auth)
-- [ ] Create share state with Redux toolkits for components in hub001
-- [ ] Test share state between monorepo
-- [ ]
+## Tech stack
 
-# Folder structure
+- Next.js 13, React, TypeScript
+- Module Federation (`@module-federation/nextjs-mf`)
+- Lerna + Yarn workspaces (monorepo management)
+- Tailwind CSS
+- Husky + commitlint + ESLint (pre-commit lint, conventional commits)
 
-To work on this project, please replicate the following folder structure:
+## Getting started
 
-<--
-https://stockx.com/
-help
-sell
-news
--->
+```bash
+# install everything (root)
+yarn && yarn initpackages
 
-```
- |- /packages
-    |- /hub001
-    |- /new001
-```
+# run an app
+yarn hub    # hub001
+yarn news   # news001
 
-## Features of this project
-
-1. This project uses lerna to manage NextJS monorepos
-2. This project uses pre-commit: to commit / push on repo, it will automatic use husky to run eslint (cached)
-3. Please refer to `commitlint.config.js` to make the massge when `git commit`
-
----- on going ----
-
-1. chat bot - with ChatGPT (as a customer service)
-2. Calendar - with book appointments with clients or staffs
-3. visualize data (data tables, locations, ....)
-
-## Feature of hub001
-
-1. hub to show login/logout
-2. header/footer ...
-3. general information.
-4. hub control style and theme
-5. **all files in src/components and src/pages will be share cross the app and other monorepo**
-
-## Style
-
-1. hub001 to control style and theme
-2. Can use tailwindcss or css-in-js
-
-## Components
-
-1. Template base && example for components for hub001
-
-```MD
-<!-- File Tree -->
-components
-├─ templates
-│  ├─ base
-│  │  ├─ BaseTemplate.interface.ts
-│  │  ├─ BaseTemplate.mocks.ts
-│  │  ├─ BaseTemplate.stories.tsx
-│  │  ├─ BaseTemplate.styles.ts
-│  │  └─ BaseTemplate.tsx
-│  └─ example
-│     └─ cards
-│        └─ cat
-│           ├─ CatCard.interface.ts
-│           ├─ CatCard.mocks.ts
-│           ├─ CatCard.stories.tsx
-│           ├─ CatCard.styles.ts
-│           └─ CatCard.tsx
+# format the whole repo
+yarn prettier
 ```
 
-2. Example for storybook of CatCard component
+Add a dependency to one package:
 
-<!-- add image in ReadmeImages -->
-<p align="center"> 
-<img src="./ReadMeImages/catcard.png"   width="60%" height="30%">
+```bash
+lerna add axios packages/hub001/website
+```
+
+## Component conventions
+
+Shared components live in the hub and follow a fixed file pattern (interface, mocks, stories, styles, component):
+
+```
+components/templates/base/
+├─ BaseTemplate.interface.ts
+├─ BaseTemplate.mocks.ts
+├─ BaseTemplate.stories.tsx
+├─ BaseTemplate.styles.ts
+└─ BaseTemplate.tsx
+```
+
+<p align="center">
+  <img src="./ReadMeImages/catcard.png" width="60%" alt="CatCard storybook example">
 </p>
 
-## Installation
+## Roadmap (from the original build notes)
 
-- root folder:
-
-`yarn && yarn initpackages`
-
-- for run project:
-  `yarn hub`
-  `yarn news`
-
-## To run the hub:
-
-1- Run the frontend of Hub001 / news001: `yarn hub` / `yarn news`
-2- Prettier whole project: `yarn prettier`
-
-## To install a package in a specific module (Frontend):
-
-1- `lerna add [packageName] [pathToModule]`
-Example: `lerna add axios packages/hub001/website`
-
-To install a package in all frontend modules:
-
-2- `lerna add [packageName]`
-Example: `lerna add axios`
+- Authentication/authorization with next-auth
+- Shared state across apps (Redux Toolkit)
+- Chatbot, calendar booking, and data-visualization modules
